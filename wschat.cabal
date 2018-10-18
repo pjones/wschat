@@ -1,0 +1,35 @@
+name:           wschat
+version:        0.1.0.0
+synopsis:       Simple WebSocket chat server
+description:    Extremely simple and limited WebSocket chat server.
+license:        BSD2
+license-file:   LICENSE
+author:         Peter Jones <pjones@devalot.com>
+maintainer:     Peter Jones <pjones@devalot.com>
+copyright:      Copyright (c) 2018 Peter J. Jones
+category:       Web
+build-type:     Simple
+cabal-version:  >=2.0
+
+extra-source-files:
+  CHANGES.md
+
+executable wschat
+  main-is: Main.hs
+  hs-source-dirs: src
+  default-language: Haskell2010
+  ghc-options: -Wall -threaded -O2 -rtsopts "-with-rtsopts=-N"
+
+  build-depends: base                  >= 4.11 && < 5
+               , aeson                ^>= 1.3
+               , concurrent-supply    ^>= 0.1
+               , directory             >= 1.3
+               , filepath              >= 1.0
+               , http-types           ^>= 0.12
+               , stm                  ^>= 2.4
+               , text                 ^>= 1.2
+               , unordered-containers ^>= 0.2
+               , wai                  ^>= 3.2
+               , wai-websockets       ^>= 3.0
+               , warp                 ^>= 3.2
+               , websockets           ^>= 0.12
