@@ -15,8 +15,10 @@ Before connecting you will need two pieces of information: the
 server's host name and an access code.  For this example we'll assume
 the following information:
 
-  | hostname    | example.com |
-  | access code | abc123      |
+| Needed Information  | Example Value |
+| ------------------- | ------------- |
+| hostname            | example.com   |
+| access code         | abc123        |
 
 Now we can construct a URL and open a connection:
 
