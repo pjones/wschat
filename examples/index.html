@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<title>WebSocket Chat Example</title>
+<h1>WebSocket Chat Example</h1>
+
+<template id="chat-template">
+  <style>
+    ul { list-style-type: none; }
+    li { display: flex; }
+    .sender { font-style: italic; padding-right: 1em; }
+  </style>
+
+  <form>
+    <ul></ul>
+    <input type="text" name="content">
+    <input type="submit" value="Send">
+  </form>
+</template>
+
+<chat-box data-host="example.com"
+          data-code="abc123"
+          data-user="Alice">
+</chat-box>
+
+<script src="example.js"></script>
