@@ -1,12 +1,12 @@
 name:           wschat
-version:        0.1.0.0
+version:        0.1.0.1
 synopsis:       Simple WebSocket chat server
 description:    Extremely simple and limited WebSocket chat server.
 license:        BSD2
 license-file:   LICENSE
 author:         Peter Jones <pjones@devalot.com>
 maintainer:     Peter Jones <pjones@devalot.com>
-copyright:      Copyright (c) 2018 Peter J. Jones
+copyright:      Copyright (c) 2018-2019 Peter J. Jones
 category:       Web
 build-type:     Simple
 cabal-version:  >=2.0
@@ -21,12 +21,12 @@ executable wschat
   ghc-options: -Wall -threaded -O2 -rtsopts "-with-rtsopts=-N"
 
   build-depends: base                  >= 4.11 && < 5
-               , aeson                ^>= 1.3
+               , aeson                 >= 1.3  && < 1.5
                , concurrent-supply    ^>= 0.1
                , directory             >= 1.3
                , filepath              >= 1.0
                , http-types           ^>= 0.12
-               , stm                  ^>= 2.4
+               , stm                   >= 2.4  && < 2.6
                , text                 ^>= 1.2
                , unordered-containers ^>= 0.2
                , wai                  ^>= 3.2

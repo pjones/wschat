@@ -1,3 +1,4 @@
+{-# LANGUAGE DeriveAnyClass    #-}
 {-# LANGUAGE DeriveGeneric     #-}
 {-# LANGUAGE OverloadedStrings #-}
 
@@ -73,20 +74,14 @@ data Message = Message
   , content :: Text
     -- ^ The content of the message.
 
-  } deriving Generic
-
-instance FromJSON Message
-instance ToJSON Message
+  } deriving(Generic, FromJSON, ToJSON)
 
 --------------------------------------------------------------------------------
 -- | Error messages that can be sent to clients.
 data Error = Error
   { error :: Text
     -- ^ The error message.
-  } deriving Generic
-
-instance FromJSON Error
-instance ToJSON Error
+  } deriving(Generic, FromJSON, ToJSON)
 
 --------------------------------------------------------------------------------
 main :: IO ()
