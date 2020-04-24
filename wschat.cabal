@@ -1,5 +1,5 @@
 name:           wschat
-version:        0.1.0.1
+version:        0.1.1.0
 synopsis:       Simple WebSocket chat server
 description:    Extremely simple and limited WebSocket chat server.
 license:        BSD2
@@ -31,5 +31,5 @@ executable wschat
                , unordered-containers ^>= 0.2
                , wai                  ^>= 3.2
                , wai-websockets       ^>= 3.0
-               , warp                 ^>= 3.2
+               , warp                 ^>= 3.3
                , websockets           ^>= 0.12
